@@ -24,6 +24,7 @@ def main():
         game_clock.tick(60)
         dt = game_clock.get_time() / 1000.0  # Delta time in seconds
         # print(dt)
+        player.update(dt)
     
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
     print(f"Screen width: {SCREEN_WIDTH}") 
